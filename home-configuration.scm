@@ -8,7 +8,8 @@
              (gnu packages)
              (gnu services)
              (guix gexp)
-             (gnu home services shells))
+             (gnu home services shells)
+             (gnu home services desktop)
              (gnu home services dotfiles))
 
 (home-environment
@@ -18,6 +19,7 @@
                                             "git"
                                             "kitty"
                                             "neovim"
+					    "stow"
                                             ))) ;; TODO: zen
 
   ;; Below is the list of Home services.  To search for available
@@ -98,6 +100,7 @@
 
   ;;  service home-dotfiles-service-type
   ;;        (home-dotfiles-configuration
-  ;;          (directories `("./dotfiles")))))
+  ;;          (directories `("./dotfiles"))))
+)
 
 
